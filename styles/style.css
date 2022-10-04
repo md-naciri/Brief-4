@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Karla';
+    src: url(../fonts/Karla-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Karla';
+    src: url(../fonts/Karla-Regular.ttf);
+    font-weight: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FBF7EE;
+    font-family: 'Karla';
+}
+
+body{
+    margin: 2.5% 10% 5% 10%;
+}
+
