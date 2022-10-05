@@ -16,5 +16,59 @@
 
 body{
     margin: 2.5% 10% 5% 10%;
+    background-color: #FBF7EE;
 }
 
+main > #contactSection .contactTitle{
+    width: fit-content;
+    font-size: 1.3rem;
+    margin: 20px 0px 10px 0px;
+}
+
+main > #contactSection .contactTitle > hr{
+    margin: 0;
+    height: 1px;
+    background-color: #8d7745;
+}
+
+main > #contactSection > #getInTouch > .inline{
+    display: flex;
+    align-items: center;
+}
+
+main > #contactSection > #getInTouch > div >  img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+main > #contactSection > #getInTouch > div >  p{
+    margin: 5px 15px;
+    font-size: .8rem;
+}
+
+main > #contactSection > #contact > form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main > #contactSection > #contact input{
+    height: 2rem;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+main > #contactSection > #contact textarea{
+    min-width: 100%;
+    margin-bottom: 10px;
+}
+
+main > #contactSection > #contact button{
+    width: 50%;
+    height: 2rem;
+    color: #fff;
+    background-color: #0C459E;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 3px;
+}
