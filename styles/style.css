@@ -46,6 +46,9 @@ body{
     list-style-type: "\1F449";
     margin-bottom: 0.7rem;
 }
+.section4 li::first-letter{
+    margin-left: 9px;
+}
 button{
     width: 15vw;
     border: 1px solid #13366D;
