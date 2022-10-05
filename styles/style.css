@@ -1,20 +1,68 @@
+@font-face {
+    font-family: 'Karla';
+    src: url(../fonts/Karla-Bold.ttf);
+    font-weight: bold;
+}
 
-section {
+@font-face {
+    font-family: 'Karla';
+    src: url(../fonts/Karla-Regular.ttf);
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Karla';
+}
+
+body {
+    margin: 2.5% 10% 5% 10%;
+    background-color: #FBF7EE;
+    box-sizing: border-box;
+}
+
+.section-2 {
     display: flex;
     margin: 0vh 5vw;
     padding-top: 1%;
+    justify-content: space-around;
+    /* background-color: #FFFFFF; */
 
 }
 
-section div {
-    border: 1px black solid;
-    margin: 0px 15px;
-    padding: 10px;
+.section-2 div {
+    border: 1px black solid #B8B8B8;
+    border-radius: 0.25em;
+    width: 50%;
+    padding: 2%;
+    margin-right: 2em;
+    background-color: #FFFFFF;
+    /* jhjdjfgjsgf */
+    /* flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center; */
+
 }
 
-.img {
-    width: 25%;
+ .container  {
+    width: 105%;
+    /* llllllllll */
+    align-self: flex-start;
+    
+  
 }
-section div p{
-    width: 100%;
+
+/* .section-2 div p { */
+    /* width: 100%;
+    forced-color-adjust: #FFFFFF;
+    margin: 10%; */
+    /* font-size: 1.5em; */
+    /* margin-top: 2em ;
+    margin-bottom: 2em ; */
+
 }
+/* .section-2 div h4{
+ margin: 0%; */
+ /* align-self: flex-start;    */
+/* } */
