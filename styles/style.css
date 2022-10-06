@@ -8,17 +8,155 @@
     src: url(../fonts/Karla-Regular.ttf);
     font-weight: normal;
 }
-
 *{
     box-sizing: border-box;
     font-family: 'Karla';
 }
-
 body{
-    margin: 2.5% 10% 0% 10%;
+    margin: 2.5% 10% 5% 10%;
     background-color: #FBF7EE;
 }
 
+/*OPEN ::: Main > Section4 (NACIRI) */
+.container4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+}
+.content1, .content2, .content3{
+    background-color: #FFF3D9;
+    border: 1.5px solid #C2C2C2;
+    border-radius: 3px;
+    padding: 13px;
+    padding-bottom: 3rem;
+    position: relative;
+}
+.content4{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px;
+}
+.content4 img{
+    width: 17vw;
+    height: calc(17vw / 1.92);
+}
+.content4 #img4{
+    text-align: center;
+}
+.section4 ul{
+    padding-left:25px;
+}
+.section4 li{
+    list-style-type: "\1F449";
+    margin-bottom: 0.7rem;
+    font-size: 1.1vw;
+}
+.section4 li::first-letter{
+    margin-left: 9px;
+}
+.button{
+    width: 15vw;
+    border: 1px solid #13366D;
+    border-radius: 3px;
+    padding: 7px 5px;
+    background-color: #FFF3D9;
+    color: #13366D;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 1.5px black;
+    transition: 0.3s;
+    font-size: 1.03vw;
+}
+.button:hover{
+    background-color: #0B48A8;
+    border: 0.5px solid #707070;
+    color: white;
+}
+.button:active{
+    box-shadow: 0 0.5px black;
+    transform: translateY(1.5px);
+}
+#section4Title{
+    color: #13366D;
+}
+.section4Text{
+    color: #A2A2A2;
+}
+.container4 .contentTiltle{
+    color: white;
+    background-color: #13366D;
+    border-radius: 13px;
+    padding: 6px 20px;
+    width: min-content;
+    margin-top: 0.7rem;
+}
+.price{
+    font-size: x-large;
+}
+.mo{
+    font-size: large;
+    color: #8D8D8D;
+}
+.container4 h3{
+    font-size: large;
+}
+.bottom-content{
+    margin-bottom: 1.2rem;
+    margin-top: 1rem;
+}
+.bottom-content, .bottom-content-3{
+    position: absolute;
+    bottom: 0;
+}
+.content3 p{
+    font-size: 1.1vw;
+}
+@media only screen and (max-width: 920px){
+    .container4{
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 1.5rem;
+    }
+    .section4 li{
+        font-size: 1.8vw;
+    }
+    .content3 p{
+        font-size: 1.8vw;
+    }
+    .button{
+        width: 25vw;
+        padding: 7px 5px;
+        font-size: 1.4vw;
+    }
+    .content4 img{
+        width: 30vw;
+        height: calc(30vw / 1.92);
+    }
+}
+@media only screen and (max-width: 500px){
+    .container4{
+        grid-template-columns: auto;
+    }
+    .section4 li{
+        font-size: 4vw;
+    }
+    .content3 p{
+        font-size: 4vw;
+    }
+    .button{
+        width: 45vw;
+        font-size: 3vw;
+    }
+    .container4 .contentTiltle{
+        font-size: 1rem;
+    }
+    .content4 img{
+        width: 59vw;
+        height: calc(59vw / 1.92);
+    }
+}
+/*CLOSE ::: Main > Section4 (NACIRI) */
+
+/*OPEN ::: Contact (HICHAM) */
 main > #contactSection .contactTitle{
     width: fit-content;
     font-size: 1.3rem;
@@ -125,5 +263,5 @@ footer > p{
 
     main > #contactSection > #getInTouch > p{
         margin-bottom: 40px;
-    }
 }
+/*CLOSE ::: Contact (HICHAM) */
