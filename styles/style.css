@@ -22,13 +22,20 @@ body{
 main > #contactSection .contactTitle{
     width: fit-content;
     font-size: 1.3rem;
-    margin: 20px 0px 10px 0px;
+    margin: 50px 0px 30px 0px;
+    color: #17396b;
 }
 
 main > #contactSection .contactTitle > hr{
     margin: 0;
-    height: 1px;
-    background-color: #8d7745;
+    height: .5px;
+    background-color: #c0bdb8;
+    border: 0px;
+}
+
+main > #contactSection > #getInTouch > p{
+    color: #6e6d6b;
+    font-size: .9rem;
 }
 
 main > #contactSection > #getInTouch > .inline{
@@ -46,6 +53,11 @@ main > #contactSection > #getInTouch > div >  p{
     font-size: .8rem;
 }
 
+main > #contactSection > #getInTouch > div >  p > a{
+    text-decoration: none;
+    color: black;
+}
+
 main > #contactSection > #contact > form{
     display: flex;
     flex-wrap: wrap;
@@ -54,21 +66,53 @@ main > #contactSection > #contact > form{
 
 main > #contactSection > #contact input{
     height: 2rem;
-    width: 100%;
+    width: min(450px, 100%);
     margin-bottom: 10px;
 }
 
 main > #contactSection > #contact textarea{
-    min-width: 100%;
+    min-width: min(450px, 100%);
     margin-bottom: 10px;
 }
 
 main > #contactSection > #contact button{
-    width: 50%;
+    width: min(200px ,50%);
     height: 2rem;
     color: #fff;
     background-color: #0C459E;
     font-weight: bold;
     border: 0px;
     border-radius: 3px;
+}
+
+
+@media screen and (min-width: 769px){
+
+    main > #contactSection{
+        display: flex;
+        flex-direction: row;
+    }
+
+    main > #contactSection > #getInTouch{
+        width: 50%;
+        padding-right: 10%;
+    }
+
+    main > #contactSection > #contact{
+        width: 50%;
+    }
+
+    main > #contactSection > #contact > .contactTitle ::before{
+        content: "";
+        position: absolute;
+        top: 12%;
+        left: 45%;
+        width: .5px;
+        height: 330px;
+        background-color: #c0bdb8;
+    }
+
+    main > #contactSection > #getInTouch > p{
+        margin-bottom: 40px;
+    }
 }
