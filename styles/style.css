@@ -13,7 +13,7 @@
     font-family: 'Karla';
 }
 body{
-    margin: 2.5% 10% 5% 10%;
+    margin: 2.5% 10% 0% 10%;
     background-color: #FBF7EE;
 }
 
@@ -164,13 +164,6 @@ main > #contactSection .contactTitle{
     color: #17396b;
 }
 
-main > #contactSection .contactTitle > hr{
-    margin: 0;
-    height: .5px;
-    background-color: #c0bdb8;
-    border: 0px;
-}
-
 main > #contactSection > #getInTouch > p{
     color: #6e6d6b;
     font-size: .9rem;
@@ -187,7 +180,8 @@ main > #contactSection > #getInTouch > div >  img{
 }
 
 main > #contactSection > #getInTouch > div >  p{
-    margin: 5px 15px;
+    padding: 8px 15px;
+    margin: 0;
     font-size: .8rem;
 }
 
@@ -218,9 +212,8 @@ main > #contactSection > #contact button{
     height: 2rem;
     color: #fff;
     background-color: #0C459E;
-    font-weight: bold;
-    border: 0px;
-    border-radius: 3px;
+    padding: 0;
+    font-size: .8rem;
 }
 
 footer{
@@ -251,7 +244,7 @@ footer > p{
         width: 50%;
     }
 
-    main > #contactSection > #contact > .contactTitle ::before{
+    main > #contactSection > #contact > form ::before{
         content: "";
         position: absolute;
         top: 15%;
