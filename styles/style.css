@@ -85,18 +85,17 @@ body {
     } */
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
     .section-2 {
         flex-wrap: wrap;  
-        margin-bottom: 25px;  
     }
     .section-2 div{
         width: 100%;
         margin: 0;
-        /* padding-top: 8px; */
+        padding-bottom: 1%;
         justify-content: center;
         font-size: 2.7vw;  
-        /* margin-bottom: 25px;    */
+        margin-bottom: 25px;
     }
     .section-2 img{
         width: 25%;
