@@ -111,6 +111,10 @@ body{
 .content3 p{
     font-size: 1.1vw;
 }
+.bottom-content-3 a{
+    text-decoration: none;
+    color: black;
+}
 @media only screen and (max-width: 920px){
     .container4{
         grid-template-columns: 1fr 1fr;
