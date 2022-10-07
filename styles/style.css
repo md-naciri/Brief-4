@@ -8,37 +8,30 @@
     src: url(../fonts/Karla-Regular.ttf);
     font-weight: normal;
 }
-
 *{
     box-sizing: border-box;
     font-family: 'Karla';
 }
-
 body{
     margin: 2.5% 10% 5% 10%;
     background-color: #FBF7EE;
 
     
 }
+/*--------------------------------------------------------- Styling of the first section (+ responsive layout)-----------------------------------------------------------*/
 .secondSection > #secondSectionImage {
     width : 100%;
     float: right;
 }
-
 main > .firstSection{
     margin-right: 2em;
     width: 60%;
 }
-
 .firstSection > .headings-section > h1 {
     color: #17396b;
-    font-size: 3em;
+    font-size: 5vh;
     margin: 0;
-
 }
-
-
-
 main > .firstSection > ul {
     display: flex;
     justify-content: flex-start;
@@ -85,7 +78,7 @@ body > .flex{
 
 main > .firstSection > .headings-section > p , main > section > .checkMarkImages > li > p{
     color: #c0bdb8;
-    font-size: 1em;
+    font-size: 2vh;
 }
 
 .checkMark{
@@ -96,7 +89,7 @@ main > .firstSection > .headings-section > p , main > section > .checkMarkImages
 }
 
 main > .secondSection{
-    width : 40%;
+    width : 40vw;
 }
 
 main > .firstSection > .container > form{
@@ -111,3 +104,31 @@ main > .firstSection > .container >  button {
     margin-left: 10px;
 }
 
+@media (max-width : 768px) {
+main > .firstSection {
+        width: 100%;
+        }
+.secondSection > #secondSectionImage {
+    display: none;
+}
+main > .firstSection{
+    margin-right: 0;
+    width: 100%;
+}
+main > .firstSection > .container > form{
+    width : 60%
+}
+main > .firstSection > .headings-section > p , main > section > .checkMarkImages > li > p{
+    color: #c0bdb8;
+    font-size: .7em;
+}
+.firstSection > .headings-section > h1 {
+    font-size: 1.7em;
+}
+main > .firstSection > .headings-section{
+    flex-wrap: nowrap;
+}
+
+
+}
+/*----------------------------------End of the first section-------------------------------------------------------------------------*/
