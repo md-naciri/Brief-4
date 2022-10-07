@@ -9,7 +9,7 @@
     src: url(../fonts/Karla-Regular.ttf);
     font-weight: normal;
 }
-<<<<<<< HEAD
+
 
 * {
     box-sizing: border-box;
@@ -113,7 +113,7 @@ body {
 }
 }
 /* ----------------------------------END Section 2 "Les Cartes" (Hajjou)--------------------------------------- */
-=======
+
 *{
     box-sizing: border-box;
     font-family: 'Karla';
@@ -371,4 +371,3 @@ footer > p{
     }
 }
 /*CLOSE ::: Contact (HICHAM) */
->>>>>>> 5a617fc0f43f94ef14479ab56cb488582f261f62
