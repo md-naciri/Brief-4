@@ -8,17 +8,265 @@
     src: url(../fonts/Karla-Regular.ttf);
     font-weight: normal;
 }
-
 *{
     box-sizing: border-box;
     font-family: 'Karla';
-    background-color:#FBF7EE ;
+}
+body{
+    margin: 2.5% 10% 0% 10%;
+    background-color: #FBF7EE;
 }
 
-body{
-    margin: 2.5% 10% 5% 10%;
-} 
+/*OPEN ::: Main > Section4 (NACIRI) */
+.container4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+}
+.content1, .content2, .content3{
+    background-color: #FFF3D9;
+    border: 1.5px solid #C2C2C2;
+    border-radius: 3px;
+    padding: 13px;
+    padding-bottom: 3rem;
+    position: relative;
+}
+.content4{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px;
+}
+.content4 img{
+    width: 17vw;
+    height: calc(17vw / 1.92);
+}
+.content4 #img4{
+    text-align: center;
+}
+.section4 ul{
+    padding-left:25px;
+}
+.section4 li{
+    list-style-type: "\1F449";
+    margin-bottom: 0.7rem;
+    font-size: 1.1vw;
+}
+.section4 li::first-letter{
+    margin-left: 9px;
+}
+.button{
+    width: 15vw;
+    border: 1px solid #13366D;
+    border-radius: 3px;
+    padding: 7px 5px;
+    background-color: #FFF3D9;
+    color: #13366D;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 1.5px black;
+    transition: 0.3s;
+    font-size: 1.03vw;
+}
+.button:hover{
+    background-color: #0B48A8;
+    border: 0.5px solid #707070;
+    color: white;
+}
+.button:active{
+    box-shadow: 0 0.5px black;
+    transform: translateY(1.5px);
+}
+#section4Title{
+    color: #13366D;
+}
+.section4Text{
+    color: #A2A2A2;
+}
+.container4 .contentTiltle{
+    color: white;
+    background-color: #13366D;
+    border-radius: 13px;
+    padding: 6px 20px;
+    width: min-content;
+    margin-top: 0.7rem;
+}
+.price{
+    font-size: x-large;
+}
+.mo{
+    font-size: large;
+    color: #8D8D8D;
+}
+.container4 h3{
+    font-size: large;
+}
+.bottom-content{
+    margin-bottom: 1.2rem;
+    margin-top: 1rem;
+}
+.bottom-content, .bottom-content-3{
+    position: absolute;
+    bottom: 0;
+}
+.content3 p{
+    font-size: 1.1vw;
+}
+.bottom-content-3 a{
+    text-decoration: none;
+    color: black;
+}
+@media only screen and (max-width: 920px){
+    .container4{
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 1.5rem;
+    }
+    .section4 li{
+        font-size: 1.8vw;
+    }
+    .content3 p{
+        font-size: 1.8vw;
+    }
+    .button{
+        width: 25vw;
+        padding: 7px 5px;
+        font-size: 1.4vw;
+    }
+    .content4 img{
+        width: 30vw;
+        height: calc(30vw / 1.92);
+    }
+}
+@media only screen and (max-width: 500px){
+    .container4{
+        grid-template-columns: auto;
+    }
+    .section4 li{
+        font-size: 4vw;
+    }
+    .content3 p{
+        font-size: 4vw;
+    }
+    .button{
+        width: 45vw;
+        font-size: 3vw;
+    }
+    .container4 .contentTiltle{
+        font-size: 1rem;
+    }
+    .content4 img{
+        width: 59vw;
+        height: calc(59vw / 1.92);
+    }
+}
+/*CLOSE ::: Main > Section4 (NACIRI) */
 
+/*OPEN ::: Contact (HICHAM) */
+main > #contactSection .contactTitle{
+    width: fit-content;
+    font-size: 1.3rem;
+    margin: 50px 0px 30px 0px;
+    color: #17396b;
+}
+
+main > #contactSection > #getInTouch > p{
+    color: #6e6d6b;
+    font-size: .9rem;
+}
+
+main > #contactSection > #getInTouch > .inline{
+    display: flex;
+    align-items: center;
+}
+
+main > #contactSection > #getInTouch > div >  img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+main > #contactSection > #getInTouch > div >  p{
+    padding: 8px 15px;
+    margin: 0;
+    font-size: .8rem;
+}
+
+main > #contactSection > #getInTouch > div >  p > a{
+    text-decoration: none;
+    color: black;
+}
+
+main > #contactSection > #contact > form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > #contactSection > #contact input{
+    height: 2rem;
+    width: min(450px, 100%);
+    margin-bottom: 10px;
+}
+
+main > #contactSection > #contact textarea{
+    min-width: min(450px, 100%);
+    max-width: min(450px, 100%);
+    margin-bottom: 10px;
+}
+
+main > #contactSection > #contact button{
+    width: min(200px ,50%);
+    height: 2rem;
+    color: #fff;
+    background-color: #0C459E;
+    padding: 0;
+    font-size: .8rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer > p{
+    margin-top: 100px;
+    font-size: .6rem;
+    color: #918e8b;
+}
+
+
+@media screen and (min-width: 769px){
+
+    main > #contactSection{
+        display: flex;
+        flex-direction: row;
+    }
+
+    main > #contactSection > #getInTouch{
+        width: 50%;
+        padding-right: 10%;
+    }
+
+    main > #contactSection > #contact{
+        width: 50%;
+    }
+
+    main > #contactSection > #contact > form ::before{
+        content: "";
+        position: absolute;
+        top: 15%;
+        left: 45%;
+        width: .5px;
+        height: 330px;
+        background-color: #c0bdb8;
+    }
+
+    main > #contactSection > #getInTouch > p{
+        margin-bottom: 40px;
+    }
+}
+/*CLOSE ::: Contact (HICHAM) */
+
+/*OPEN ::: Header (HIND) */
 #check, #btn, #cancel{
     display: none;
 }
@@ -60,35 +308,17 @@ header > div.lastNav > ul{
     align-items: center;
 }
 
-.button{
+#buttonHeader{
     font-size: min(16px, 1.2vw);
     margin-left: 20px;
     width: 100px;
-    border: 1px solid #13366D;
-    border-radius: 3px;
-    padding: 7px 5px;
-    background-color: #FFF3D9;
-    color: #13366D;
-    cursor: pointer;
-    font-weight: bold;
-    box-shadow: 0 1.5px black;
-    transition: 0.3s;
-}
-.button:hover{
-    background-color: #0B48A8;
-    border: 0.5px solid #707070;
-    color: white;
-}
-.button:active{
-    box-shadow: 0 0.5px black;
-    transform: translateY(1.5px);
 }
 
 @media (max-width:704px) {
     header{
         font-size: 16px;
     }
-    .button{
+    #buttonHeader{
         font-size: 12px;
     }
     header > .firstNav ul, header > .lastNav ul{
@@ -137,3 +367,4 @@ header > div.lastNav > ul{
         left: 20vw;
     }
 }
+/*CLOSE ::: Header (HIND) */
