@@ -15,7 +15,127 @@
 body{
     margin: 2.5% 10% 0% 10%;
     background-color: #FBF7EE;
+
+    
 }
+/*--------------------------------------------------------- Styling of the first section (+ responsive layout)-----------------------------------------------------------*/
+.secondSection > #secondSectionImage {
+    width : 100%;
+    float: right;
+}
+main > .flex{
+    margin-top: 100px;
+}
+main > div > .firstSection{
+    margin-right: 2em;
+    width: 60%;
+}
+.firstSection > .headings-section > h1 {
+    color: #17396b;
+    font-size: 5vh;
+    margin: 0;
+}
+main > div > .firstSection > ul {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+main > div > .firstSection > ul > li {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+}
+main > div > .firstSection > ul > li:first-child{
+    margin-right: 10px;
+}
+#tryForFreeButton {
+    padding: 5px 10px;
+    font-size: x-small;
+    background-color: #0c459e;
+    color: white;
+    border: 0 solid #030210;
+    border-radius: 3px;
+    box-shadow: 0 2px #060400;
+    flex-grow: 0;
+
+}
+main > div > .firstSection > .container > form > input{
+margin-right: 20px;
+}
+
+main > div > .firstSection > .container {
+    display: flex;
+    justify-content: flex-start;    
+}
+
+body > main > .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+main > div > .firstSection > .headings-section > p , main > div > section > .checkMarkImages > li > p{
+    color: #c0bdb8;
+    font-size: 2vh;
+}
+
+.checkMark{
+    width : 14px;
+    height: 14px;
+    margin-right: 10px;
+
+}
+
+main > div > .secondSection{
+    width : 40vw;
+}
+
+main > div > .firstSection > .container > form{
+    width : 40%
+}
+
+main > div > .firstSection > .container > form > input{
+    width: 100%;
+}
+
+main > div > .firstSection > .container >  button {
+    margin-left: 10px;
+}
+
+@media (max-width : 768px) {
+main > div > .firstSection {
+        width: 100%;
+        }
+.secondSection > #secondSectionImage {
+    display: none;
+}
+main > div > .firstSection{
+    margin-right: 0;
+    width: 100%;
+}
+main > div > .firstSection > .container > form{
+    width : 60%
+}
+main > div > .firstSection > .headings-section > p , main > div > section > .checkMarkImages > li > p{
+    color: #c0bdb8;
+    font-size: .7em;
+}
+.firstSection > .headings-section > h1 {
+    font-size: 1.7em;
+}
+main > div > .firstSection > .headings-section{
+    flex-wrap: nowrap;
+}
+
+
+}
+/*----------------------------------End of the first section-------------------------------------------------------------------------*/
+
 
 /*OPEN ::: Main > Section4 (NACIRI) */
 .container4{
