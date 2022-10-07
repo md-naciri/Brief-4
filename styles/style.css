@@ -115,6 +115,51 @@ body{
     text-decoration: none;
     color: black;
 }
+/* Pricing Page OP */
+.containerPricing{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+}
+.content1Pricing, .content2Pricing, .content3Pricing{
+    background-color: #F2E5D5;
+    border: 1.5px solid #C2C2C2;
+    border-radius: 11px;
+    padding: 13px;
+    padding-bottom: 3rem;
+    position: relative;
+}
+.buttonPricing{
+    width: 22vw;
+    border: 1px solid #13366D;
+    border-radius: 3px;
+    padding: 7px 5px;
+    background-color: #F2E5D5;
+    color: #13366D;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 1.5px black;
+    transition: 0.3s;
+    font-size: 1.03vw;
+}
+.buttonPricing:hover{
+    background-color: #0B48A8;
+    border: 0.5px solid #707070;
+    color: white;
+}
+.buttonPricing:active{
+    box-shadow: 0 0.5px black;
+    transform: translateY(1.5px);
+}
+.containerPricing .contentTiltle{
+    color: white;
+    background-color: #13366D;
+    border-radius: 13px;
+    padding: 6px 20px;
+    width: min-content;
+    margin-top: 0.7rem;
+}
+/* Pricing Page Cl */
 @media only screen and (max-width: 920px){
     .container4{
         grid-template-columns: 1fr 1fr;
@@ -135,8 +180,22 @@ body{
         width: 30vw;
         height: calc(30vw / 1.92);
     }
+        /* Pricing Page OP */
+        .containerPricing{
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 1.5rem;
+        }
+        .buttonPricing{
+            width: 25vw;
+            padding: 7px 5px;
+            font-size: 1.4vw;
+        }
+        .content3Pricing{
+            grid-column: 1/3;
+        }
+        /* Pricing Page CL */
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 576px){
     .container4{
         grid-template-columns: auto;
     }
@@ -157,6 +216,19 @@ body{
         width: 59vw;
         height: calc(59vw / 1.92);
     }
+    /* Pricing Page OP */
+    .content3Pricing{
+        grid-column: 1/2;
+    }
+    .containerPricing{
+        grid-template-columns: 1fr;
+        grid-row-gap: 1.5rem;
+    }
+    .buttonPricing{
+        width: 45vw;
+        font-size: 3vw;
+    }
+    /* Pricing Page CL */
 }
 /*CLOSE ::: Main > Section4 (NACIRI) */
 
