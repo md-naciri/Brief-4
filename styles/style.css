@@ -11,177 +11,129 @@
 
 *{
     box-sizing: border-box;
-    /* font-family: 'Karla'; */
+    font-family: 'Karla';
     background-color:#FBF7EE ;
 }
 
 body{
     margin: 2.5% 10% 5% 10%;
 } 
-header nav{
-    position:relative;
+
+#check, #btn, #cancel{
+    display: none;
+}
+
+header label{
+    position: absolute;
+    right: 10%;
+}
+
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 .3em;
-    background-color: #FBF7EE;
+    font-size: min(16px, 1.2vw);
 }
-.navbar{
-    display: flex; 
+
+header div > ul{
+    display: flex;
     justify-content: space-between;
 }
-.navbar .liste1{
-    display:flex;
-    margin-right: 7em;
-}
-.navbar .liste2{
-    display:flex;
-    margin-left: 7em;
-}
-.navbar  li{
+
+header div > ul > li{
     list-style: none;
-    margin-left: .6em;
 }
-.navbar a{
+
+header div > ul > li > a{
+    margin-left: 20px;
     text-decoration: none;
     color: black;
 }
-nav .navbar a:hover{
-    color: #4474bb;
+
+header div > ul > li > a:hover{
+    color: #4474BB;
+    text-decoration: underline;
     transition: .3s;
-    background-color: #FFF;
-    
-}
-.btn-sign{
-    padding: 1vh 1vw;
-    font-size: 13px;
-    /* background-color:transparent; */
-    background-color: inherit;
-    border:none;   
-
-}
-nav .navbar .btn-try{
-    background-color:#041C40;
-    border:1px solid #707070;
-    padding: 1vh 1vw;
-    font-size: 11px;
-    box-shadow: 1px 2px #0a0a0a;
-    border-radius: 2px;
-    color: #FFF;
-
-}
-label #check[type='checkbox']{
-   display: none;
-}
-label #btn{
-    display: none;
 }
 
-label #cancel,label #btn{
-    /* position: absolute; */
-    color:black;
-    font-size: 30px;
-    float: right;
-    /* line-height: 80px; */
-    margin-right: 40px;
+header > div.lastNav > ul{
+    align-items: center;
+}
+
+.button{
+    font-size: min(16px, 1.2vw);
+    margin-left: 20px;
+    width: 100px;
+    border: 1px solid #13366D;
+    border-radius: 3px;
+    padding: 7px 5px;
+    background-color: #FFF3D9;
+    color: #13366D;
     cursor: pointer;
-     display: none; 
-
+    font-weight: bold;
+    box-shadow: 0 1.5px black;
+    transition: 0.3s;
 }
-/* #check{
-    display: none;
-} */
-
-@media (max-width:848px){
-    .navbar .liste1{
-       
-        margin-right: 2em;
-    }
-    .navbar .liste2{
-       
-        margin-left: 2em;
-    }
-
+.button:hover{
+    background-color: #0B48A8;
+    border: 0.5px solid #707070;
+    color: white;
 }
-@media (max-width:867px){
-    .navbar .liste1{
-       
-        margin-right: 0em;
-    }
-    .navbar .liste2{
-       
-        margin-left: 0em;
-    }
-
+.button:active{
+    box-shadow: 0 0.5px black;
+    transform: translateY(1.5px);
 }
 
-/* @media (max-width:681px){
-    .navbar .liste1{
-       
-        margin-right: 0em;
+@media (max-width:704px) {
+    header{
+        font-size: 16px;
     }
-    .navbar .liste2{
-       
-        margin-left: 0em;
+    .button{
+        font-size: 12px;
     }
-
-} */
-
-@media (max-width:633px){
-    header nav {
-            display: block;
-    
-    
-        }
-    
-        .navbar .liste1 {
-            display: block;
-    
-        }
-    
-        .navbar .liste2 {
-            display: block;
-    
-        }
-    
-        .navbar {
-            position:absolute;
-            /* left:0%; */
-            left: -100%;
-            text-align: center; /*aligner verticalement*/
-            width:100%;
-            /* height: 100vh; */
-            display: block;
-            background-color: #DFD9D9;
-        }
-    
-        .navbar li {
-            margin-top: .4em;
-            
-        }
-        .navbar li a{
-            font-size:17px;
-
-        }
-    
-        /* label #cancel,*/label #btn { 
-    
-            display: block;
-    
-        }
-        /* label #check[type='checkbox']:checked + .navbar{
-             left: -100%;
-        }  */
-     #check:checked ~.navbar{
-        left: 0%;
-        /* left: 100%; */
-     }
-     #check:checked ~ label #btn{
+    header > .firstNav ul, header > .lastNav ul{
         display: none;
-     }
-     #check:checked ~ label #cancel{
+        width: 200px;
+    }
+    header > .lastNav ul{
+        margin: 0;
+    }
+    #btn{
         display: block;
-     }
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+    #btn, #cancel{
+        font-size: 30px;
+        cursor: pointer;
+    }
+    #check:checked ~ .lastNav ul > li{
+        margin-top: 10px;
+    }
+    #check:checked ~ .firstNav ul{
+        text-align: center;
+        display: block;
+        position: absolute;
+        right: 40vw;
+    }
+    #check:checked ~ .lastNav ul{
+        text-align: center;
+        display: block;
+        position: absolute;
+        top: 22vh;
+        right: 40vw;
+    }
+}
 
-
+@media (max-width:500px) {
+    #check:checked ~ .firstNav ul{
+        left: 20vw;
+    }
+    #check:checked ~ .lastNav ul{
+        left: 20vw;
+    }
 }
