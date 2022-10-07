@@ -3,11 +3,118 @@
     src: url(../fonts/Karla-Bold.ttf);
     font-weight: bold;
 }
+
 @font-face {
     font-family: 'Karla';
     src: url(../fonts/Karla-Regular.ttf);
     font-weight: normal;
 }
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Karla';
+}
+
+body {
+    margin: 2.5% 10% 0% 10%;
+    background-color: #FBF7EE;
+}
+/* ----------------------------------START Section 2 "Les Cartes" (Hajjou)--------------------------------------- */
+.section-2 {
+    display: flex;
+    padding-top: 1%;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.section-2 > div {
+    border: 1px solid #B8B8B8;
+    border-radius: 0.25em;
+    width: 100%;
+    padding: 2px 10px ;
+    margin: 0px 15px;
+    background-color: #FFFFFF;
+}
+.container-title img{
+    width: 25%;
+    padding-bottom: 10px;
+}
+.container-title{
+    padding-bottom: 5px;
+    padding-top: 10px;    
+}
+.section-2 p{
+   margin-top: 0;   
+}
+.container-title h4{
+    margin-top: 0;
+}
+
+/*___________________________________Responsive pour Section 2 (Tablettes)___________________________________ */
+
+@media only screen and (max-width: 920px) {
+    .section-2 {
+        flex-wrap: wrap;    
+    }
+    .section-2 > div{
+        width: 44%;
+        padding-bottom: 1%;
+        justify-content: center;
+        margin-top: 8%;  
+        margin: 0;   
+        padding: 13px;
+        font-size:2vw; 
+        margin-bottom: 25px;
+    }
+    .section-2 img{
+        width: 25%;
+    }
+    .container-title h4{
+        width: 150%;
+        margin: 0%;
+    }
+    .section-2 p{
+        padding-bottom: 13px;
+    }
+    .container-title{
+        margin-bottom: 20px;
+}
+
+/*___________________________________Responsive pour Section 2 (Phone)___________________________________ */
+
+@media only screen and (max-width: 576px) {
+    .section-2 {
+        flex-wrap: wrap;  
+    }
+    .section-2 > div{
+        width: 100%;
+        margin: 0;
+        padding: 13px;
+        padding-bottom: 15px;
+        justify-content: center;
+        font-size: 3vw;  
+        margin-bottom: 25px;
+    }
+    .section-2 img{
+        width: 15%;
+        margin: 0;
+    }
+    .section-2 p{
+        margin: 0;
+        padding-bottom: 13px;
+    }
+    .container-title h4{
+        width: 100%;
+        margin: 0;
+        padding: 0px 0px 0px;
+    }
+   .container-title{
+    margin-bottom: 10px;
+    }
+}
+}
+/* ----------------------------------END Section 2 "Les Cartes" (Hajjou)--------------------------------------- */
+
 *{
     box-sizing: border-box;
     font-family: 'Karla';
@@ -15,7 +122,127 @@
 body{
     margin: 2.5% 10% 0% 10%;
     background-color: #FBF7EE;
+
+    
 }
+/*--------------------------------------------------------- Styling of the first section (+ responsive layout)-----------------------------------------------------------*/
+.secondSection > #secondSectionImage {
+    width : 100%;
+    float: right;
+}
+main > .flex{
+    margin-top: 100px;
+}
+main > div > .firstSection{
+    margin-right: 2em;
+    width: 60%;
+}
+.firstSection > .headings-section > h1 {
+    color: #17396b;
+    font-size: 5vh;
+    margin: 0;
+}
+main > div > .firstSection > ul {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+main > div > .firstSection > ul > li {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+}
+main > div > .firstSection > ul > li:first-child{
+    margin-right: 10px;
+}
+#tryForFreeButton {
+    padding: 5px 10px;
+    font-size: x-small;
+    background-color: #0c459e;
+    color: white;
+    border: 0 solid #030210;
+    border-radius: 3px;
+    box-shadow: 0 2px #060400;
+    flex-grow: 0;
+
+}
+main > div > .firstSection > .container > form > input{
+margin-right: 20px;
+}
+
+main > div > .firstSection > .container {
+    display: flex;
+    justify-content: flex-start;    
+}
+
+body > main > .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+main > div > .firstSection > .headings-section > p , main > div > section > .checkMarkImages > li > p{
+    color: #c0bdb8;
+    font-size: 2vh;
+}
+
+.checkMark{
+    width : 14px;
+    height: 14px;
+    margin-right: 10px;
+
+}
+
+main > div > .secondSection{
+    width : 40vw;
+}
+
+main > div > .firstSection > .container > form{
+    width : 40%
+}
+
+main > div > .firstSection > .container > form > input{
+    width: 100%;
+}
+
+main > div > .firstSection > .container >  button {
+    margin-left: 10px;
+}
+
+@media (max-width : 768px) {
+main > div > .firstSection {
+        width: 100%;
+        }
+.secondSection > #secondSectionImage {
+    display: none;
+}
+main > div > .firstSection{
+    margin-right: 0;
+    width: 100%;
+}
+main > div > .firstSection > .container > form{
+    width : 60%
+}
+main > div > .firstSection > .headings-section > p , main > div > section > .checkMarkImages > li > p{
+    color: #c0bdb8;
+    font-size: .7em;
+}
+.firstSection > .headings-section > h1 {
+    font-size: 1.7em;
+}
+main > div > .firstSection > .headings-section{
+    flex-wrap: nowrap;
+}
+
+
+}
+/*----------------------------------End of the first section-------------------------------------------------------------------------*/
+
 
 /*OPEN ::: Main > Section4 (NACIRI) */
 .container4{
