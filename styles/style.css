@@ -337,3 +337,106 @@ footer > p{
     }
 }
 /*CLOSE ::: Contact (HICHAM) */
+
+/*OPEN ::: Header (HIND) */
+#check, #btn, #cancel{
+    display: none;
+}
+
+header label{
+    position: absolute;
+    right: 10%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: min(16px, 1.2vw);
+}
+
+header div > ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+header div > ul > li{
+    list-style: none;
+}
+
+header div > ul > li > a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+header div > ul > li > a:hover{
+    color: #4474BB;
+    text-decoration: underline;
+    transition: .3s;
+}
+
+header > div.lastNav > ul{
+    align-items: center;
+}
+
+#buttonHeader{
+    font-size: min(16px, 1.2vw);
+    margin-left: 20px;
+    width: 100px;
+}
+
+@media (max-width:704px) {
+    header{
+        font-size: 16px;
+    }
+    #buttonHeader{
+        font-size: 12px;
+    }
+    header > .firstNav ul, header > .lastNav ul{
+        display: none;
+        width: 200px;
+    }
+    header > .lastNav ul{
+        margin: 0;
+    }
+    #btn{
+        display: block;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+    #btn, #cancel{
+        font-size: 30px;
+        cursor: pointer;
+    }
+    #check:checked ~ .lastNav ul > li{
+        margin-top: 10px;
+    }
+    #check:checked ~ .firstNav ul{
+        text-align: center;
+        display: block;
+        position: absolute;
+        right: 40vw;
+    }
+    #check:checked ~ .lastNav ul{
+        text-align: center;
+        display: block;
+        position: absolute;
+        top: 22vh;
+        right: 40vw;
+    }
+}
+
+@media (max-width:500px) {
+    #check:checked ~ .firstNav ul{
+        left: 20vw;
+    }
+    #check:checked ~ .lastNav ul{
+        left: 20vw;
+    }
+}
+/*CLOSE ::: Header (HIND) */
