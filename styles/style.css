@@ -13,7 +13,7 @@
     font-family: 'Karla';
 }
 body{
-    margin: 2.5% 10% 5% 10%;
+    margin: 2.5% 10% 0% 10%;
     background-color: #FBF7EE;
 
     
@@ -40,3 +40,95 @@ main > .firstSection > ul {
     flex-wrap: wrap;
 }
 
+main > .firstSection > ul > li {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+}
+main > .firstSection > ul > li:first-child{
+    margin-right: 10px;
+}
+#tryForFreeButton {
+    padding: 5px 10px;
+    font-size: x-small;
+    background-color: #0c459e;
+    color: white;
+    border: 0 solid #030210;
+    border-radius: 3px;
+    box-shadow: 0 2px #060400;
+    flex-grow: 0;
+
+}
+main > .firstSection > .container > form > input{
+margin-right: 20px;
+}
+
+main > .firstSection > .container {
+    display: flex;
+    justify-content: flex-start;    
+}
+
+body > .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+main > .firstSection > .headings-section > p , main > section > .checkMarkImages > li > p{
+    color: #c0bdb8;
+    font-size: 2vh;
+}
+
+.checkMark{
+    width : 14px;
+    height: 14px;
+    margin-right: 10px;
+
+}
+
+main > .secondSection{
+    width : 40vw;
+}
+
+main > .firstSection > .container > form{
+    width : 40%
+}
+
+main > .firstSection > .container > form > input{
+    width: 100%;
+}
+
+main > .firstSection > .container >  button {
+    margin-left: 10px;
+}
+
+@media (max-width : 768px) {
+main > .firstSection {
+        width: 100%;
+        }
+.secondSection > #secondSectionImage {
+    display: none;
+}
+main > .firstSection{
+    margin-right: 0;
+    width: 100%;
+}
+main > .firstSection > .container > form{
+    width : 60%
+}
+main > .firstSection > .headings-section > p , main > section > .checkMarkImages > li > p{
+    color: #c0bdb8;
+    font-size: .7em;
+}
+.firstSection > .headings-section > h1 {
+    font-size: 1.7em;
+}
+main > .firstSection > .headings-section{
+    flex-wrap: nowrap;
+}
+
+
+}
+/*----------------------------------End of the first section-------------------------------------------------------------------------*/
