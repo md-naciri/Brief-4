@@ -5,25 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
-
 <body>
+    <header>
     <nav>
-        <img class="navbar-logo" src="./images/logo.png" alt="">
-
-        <div class="navbar-links">
-        <a href="#">Home</a>
-        <a href="#">Features</a>
-        <a href="#">Pricing & Plans</a>
+        <input type="checkbox" id="check">
+      
+    
+        <img src="./images/logo.png">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <div class="navbar">
+            <ul class="liste1">
+                <li><a href="#">Home</a></li>
+                <li><a href="# ">Features</a></li>
+                <li><a href="# ">Pricing & Plans</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+    
+            <ul class="liste2">
+                <li><a class="btn-sign" href="#">Sign in</a></li>
+                <li><a class="btn-try" href="#">Try for free</a></li>
+    
+    
+                <!-- <button  class="btn-sign">Sign in</button> -->
+            </ul>
         </div>
-
-        <div class="bouton">
-        <button class="btn-sign">sign in</button>
-        <button class="btn-try">try for free</button>
-        </div>
+        
     </nav>
-    
-    
+    </header>
 </body>
 </html>
