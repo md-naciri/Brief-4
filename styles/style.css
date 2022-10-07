@@ -142,6 +142,9 @@ body{
     transition: 0.3s;
     font-size: 1.03vw;
 }
+.buttonPr{
+    background-color: #F2E5D5;
+}
 .buttonPricing:hover{
     background-color: #0B48A8;
     border: 0.5px solid #707070;
@@ -386,7 +389,7 @@ header > div.lastNav > ul{
     width: 100px;
 }
 
-@media (max-width:704px) {
+@media (max-width:729px) {
     header{
         font-size: 16px;
     }
