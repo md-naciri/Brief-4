@@ -1,84 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <title>Desi.gn</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="images/logo2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
-<body>
-    <!--------------------------------------------------------- HTML of the first section ------------------------------------------------------------>
 
-    <main class="flex">
-    <section class="firstSection">
-        <div class="headings-section">
-            <h1>Unlimited Designs.</h1>
-            <h1>Flat Monthly Fee.</h1>
-            <p>Get unlimited designs in areas such as web design, app design, brochures and much more for a flat monthly fee. No additional charges.</p>
+<body>
+    <header>
+        <div>
+            <img src="./images/logo.png">
         </div>
-        <div class="container">
-            <form>
-                <input type="text" placeholder="Enter e-mail address" >
-            </form>
-            <button id="tryForFreeButton">Try for free</button>
+
+        <input type="checkbox" id="check">
+
+        <nav class="firstNav">
+            <div class="navbar">
+                <ul class="liste1">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="# ">Features</a></li>
+                    <li><a href="# ">Pricing & Plans</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>                
+            </div>
+        </nav>
+        <div class="lastNav">
+            <ul>
+                <li><a class="btn-sign" href="#">Sign in</a></li>
+                <li><button type="button" class="button" id="buttonHeader">Try for free</button></li>
+            </ul>
         </div>
-        <ul class="checkMarkImages">
-            <li><img src="../images/Checkmark.png" class="checkMark"><p> 14 days money back garantee </p></li>
-            <li><img src="../images/Checkmark.png" class="checkMark"> <p>No credit card required</p></li>
-        </ul>
-    </section>
-    <section class="secondSection">
-        <img id = "secondSectionImage" src="images/BG Hero.png">
-    </section>
-    
- <!----------------------------------------------------------------------------------------------------------------------------->
-    <section class="section4">
-        <h1 id="section4Title">Transparent Pricing.</h1>
-        <p class="section4Text">No hidden fees or extra charges, view the charts for all things pricing-<br>related.</p>
-        <div class="container4">
-            <div class="content1">
-                <h5 class="contentTiltle">Startup</h5>
-                <button type="button" class="button">Try for free</button>
-                <ul>
-                    <li>Brochures, websites, applications.</li>
-                    <li>Free stock photos.</li>
-                    <li>Unlimited revisions.</li>
-                    <li>Unlimited orders.</li>
+
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+    </header>
+    <main>
+         <!--------------------------------------------------------- HTML of the first section ------------------------------------------------------------>
+
+    <div class="flex">
+            <section class="firstSection">
+                <div class="headings-section">
+                    <h1>Unlimited Designs.</h1>
+                    <h1>Flat Monthly Fee.</h1>
+                    <p>Get unlimited designs in areas such as web design, app design, brochures and much more for a flat monthly fee. No additional charges.</p>
+                </div>
+                <div class="container">
+                    <form>
+                        <input type="text" placeholder="Enter e-mail address" >
+                    </form>
+                    <button id="tryForFreeButton">Try for free</button>
+                </div>
+                <ul class="checkMarkImages">
+                    <li><img src="../images/Checkmark.png" class="checkMark"><p> 14 days money back garantee </p></li>
+                    <li><img src="../images/Checkmark.png" class="checkMark"> <p>No credit card required</p></li>
                 </ul>
-                <div class="bottom-content">
-                    <span class="price">$699</span><span class="mo">/mo</span>
-                </div>
-            </div>
-            <div class="content2">
-                <h5 class="contentTiltle">Business</h5>
-                <button type="button" class="button">Try for free</button>
-                <ul>
-                    <li>All startup features.</li>
-                    <li>Front-end development.</li>
-                    <li>Full-time support.</li>
-                    <li>Slack communication.</li>
-                </ul>
-                <div class="bottom-content">
-                    <span class="price">$1299</span><span class="mo">/mo</span>
-                </div>
-            </div>
-            <div class="content3">
-                <h5 class="contentTiltle">Enterprise</h5>
-                <button type="button" class="button">Schedule consultancy call</button>
-                <p>We offer customizable plans for enterprises who are looking to make use of our service. </p>
-                <h3 class="bottom-content-3"><a href="contact.html" target="_blank">Contact Us</a></h3>
-            </div>
-            <div class="content4">
-                <h5 style="font-weight: normal;">Ads via Carbon</h5>
-                <div id="img4">
-                    <img src="images/ads.png" alt="advertising">
-                </div>
-                <p class="section4Text">Get 20% off Adobe Plans using our Promo Code 'desi.gn20'</p>
-            </div>
+            </section>
+            <section class="secondSection">
+                <img id = "secondSectionImage" src="images/BG Hero.png">
+            </section>
         </div>
-        <h5 style="color: #13366D; margin-top: 2rem;">Made with ❤️ by {SQUAD MVPs}</h5>
-    </section>
+        
+     <!----------------------------------------------------------------------------------------------------------------------------->  
+        <section class="section4">
+            <h1 id="section4Title">Transparent Pricing.</h1>
+            <p class="section4Text">No hidden fees or extra charges, view the charts for all things pricing-<br>related.</p>
+            <div class="container4">
+                <div class="content1">
+                    <h5 class="contentTiltle">Startup</h5>
+                    <button type="button" class="button">Try for free</button>
+                    <ul>
+                        <li>Brochures, websites, applications.</li>
+                        <li>Free stock photos.</li>
+                        <li>Unlimited revisions.</li>
+                        <li>Unlimited orders.</li>
+                    </ul>
+                    <div class="bottom-content">
+                        <span class="price">$699</span><span class="mo">/mo</span>
+                    </div>
+                </div>
+                <div class="content2">
+                    <h5 class="contentTiltle">Business</h5>
+                    <button type="button" class="button">Try for free</button>
+                    <ul>
+                        <li>All startup features.</li>
+                        <li>Front-end development.</li>
+                        <li>Full-time support.</li>
+                        <li>Slack communication.</li>
+                    </ul>
+                    <div class="bottom-content">
+                        <span class="price">$1299</span><span class="mo">/mo</span>
+                    </div>
+                </div>
+                <div class="content3">
+                    <h5 class="contentTiltle">Enterprise</h5>
+                    <button type="button" class="button">Schedule consultancy call</button>
+                    <p>We offer customizable plans for enterprises who are looking to make use of our service. </p>
+                    <h3 class="bottom-content-3"><a href="contact.html" target="_blank">Contact Us</a></h3>
+                </div>
+                <div class="content4">
+                    <h5 style="font-weight: normal;">Ads via Carbon</h5>
+                    <div id="img4">
+                        <img src="images/ads.png" alt="advertising">
+                    </div>
+                    <p class="section4Text">Get 20% off Adobe Plans using our Promo Code 'desi.gn20'</p>
+                </div>
+            </div>
+            <h5 style="color: #13366D; margin-top: 2rem;">Made with ❤️ by {SQUAD MVPs}</h5>
+        </section>
     </main>
     <footer>
         <p>
@@ -86,4 +121,5 @@
         </p>
     </footer>
 </body>
+
 </html>

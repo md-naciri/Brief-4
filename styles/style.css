@@ -23,7 +23,10 @@ body{
     width : 100%;
     float: right;
 }
-main > .firstSection{
+main > .flex{
+    margin-top: 100px;
+}
+main > div > .firstSection{
     margin-right: 2em;
     width: 60%;
 }
@@ -32,7 +35,7 @@ main > .firstSection{
     font-size: 5vh;
     margin: 0;
 }
-main > .firstSection > ul {
+main > div > .firstSection > ul {
     display: flex;
     justify-content: flex-start;
     padding-left: 0;
@@ -40,13 +43,13 @@ main > .firstSection > ul {
     flex-wrap: wrap;
 }
 
-main > .firstSection > ul > li {
+main > div > .firstSection > ul > li {
     display: flex;
     list-style: none;
     align-items: center;
     margin: 0;
 }
-main > .firstSection > ul > li:first-child{
+main > div > .firstSection > ul > li:first-child{
     margin-right: 10px;
 }
 #tryForFreeButton {
@@ -60,23 +63,23 @@ main > .firstSection > ul > li:first-child{
     flex-grow: 0;
 
 }
-main > .firstSection > .container > form > input{
+main > div > .firstSection > .container > form > input{
 margin-right: 20px;
 }
 
-main > .firstSection > .container {
+main > div > .firstSection > .container {
     display: flex;
     justify-content: flex-start;    
 }
 
-body > .flex{
+body > main > .flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 
-main > .firstSection > .headings-section > p , main > section > .checkMarkImages > li > p{
+main > div > .firstSection > .headings-section > p , main > div > section > .checkMarkImages > li > p{
     color: #c0bdb8;
     font-size: 2vh;
 }
@@ -88,47 +91,400 @@ main > .firstSection > .headings-section > p , main > section > .checkMarkImages
 
 }
 
-main > .secondSection{
+main > div > .secondSection{
     width : 40vw;
 }
 
-main > .firstSection > .container > form{
+main > div > .firstSection > .container > form{
     width : 40%
 }
 
-main > .firstSection > .container > form > input{
+main > div > .firstSection > .container > form > input{
     width: 100%;
 }
 
-main > .firstSection > .container >  button {
+main > div > .firstSection > .container >  button {
     margin-left: 10px;
 }
 
 @media (max-width : 768px) {
-main > .firstSection {
+main > div > .firstSection {
         width: 100%;
         }
 .secondSection > #secondSectionImage {
     display: none;
 }
-main > .firstSection{
+main > div > .firstSection{
     margin-right: 0;
     width: 100%;
 }
-main > .firstSection > .container > form{
+main > div > .firstSection > .container > form{
     width : 60%
 }
-main > .firstSection > .headings-section > p , main > section > .checkMarkImages > li > p{
+main > div > .firstSection > .headings-section > p , main > div > section > .checkMarkImages > li > p{
     color: #c0bdb8;
     font-size: .7em;
 }
 .firstSection > .headings-section > h1 {
     font-size: 1.7em;
 }
-main > .firstSection > .headings-section{
+main > div > .firstSection > .headings-section{
     flex-wrap: nowrap;
 }
 
 
 }
 /*----------------------------------End of the first section-------------------------------------------------------------------------*/
+
+
+/*OPEN ::: Main > Section4 (NACIRI) */
+.container4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+}
+.content1, .content2, .content3{
+    background-color: #FFF3D9;
+    border: 1.5px solid #C2C2C2;
+    border-radius: 3px;
+    padding: 13px;
+    padding-bottom: 3rem;
+    position: relative;
+}
+.content4{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px;
+}
+.content4 img{
+    width: 17vw;
+    height: calc(17vw / 1.92);
+}
+.content4 #img4{
+    text-align: center;
+}
+.section4 ul{
+    padding-left:25px;
+}
+.section4 li{
+    list-style-type: "\1F449";
+    margin-bottom: 0.7rem;
+    font-size: 1.1vw;
+}
+.section4 li::first-letter{
+    margin-left: 9px;
+}
+.button{
+    width: 15vw;
+    border: 1px solid #13366D;
+    border-radius: 3px;
+    padding: 7px 5px;
+    background-color: #FFF3D9;
+    color: #13366D;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 1.5px black;
+    transition: 0.3s;
+    font-size: 1.03vw;
+}
+.button:hover{
+    background-color: #0B48A8;
+    border: 0.5px solid #707070;
+    color: white;
+}
+.button:active{
+    box-shadow: 0 0.5px black;
+    transform: translateY(1.5px);
+}
+#section4Title{
+    color: #13366D;
+}
+.section4Text{
+    color: #A2A2A2;
+}
+.container4 .contentTiltle{
+    color: white;
+    background-color: #13366D;
+    border-radius: 13px;
+    padding: 6px 20px;
+    width: min-content;
+    margin-top: 0.7rem;
+}
+.price{
+    font-size: x-large;
+}
+.mo{
+    font-size: large;
+    color: #8D8D8D;
+}
+.container4 h3{
+    font-size: large;
+}
+.bottom-content{
+    margin-bottom: 1.2rem;
+    margin-top: 1rem;
+}
+.bottom-content, .bottom-content-3{
+    position: absolute;
+    bottom: 0;
+}
+.content3 p{
+    font-size: 1.1vw;
+}
+.bottom-content-3 a{
+    text-decoration: none;
+    color: black;
+}
+@media only screen and (max-width: 920px){
+    .container4{
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 1.5rem;
+    }
+    .section4 li{
+        font-size: 1.8vw;
+    }
+    .content3 p{
+        font-size: 1.8vw;
+    }
+    .button{
+        width: 25vw;
+        padding: 7px 5px;
+        font-size: 1.4vw;
+    }
+    .content4 img{
+        width: 30vw;
+        height: calc(30vw / 1.92);
+    }
+}
+@media only screen and (max-width: 500px){
+    .container4{
+        grid-template-columns: auto;
+    }
+    .section4 li{
+        font-size: 4vw;
+    }
+    .content3 p{
+        font-size: 4vw;
+    }
+    .button{
+        width: 45vw;
+        font-size: 3vw;
+    }
+    .container4 .contentTiltle{
+        font-size: 1rem;
+    }
+    .content4 img{
+        width: 59vw;
+        height: calc(59vw / 1.92);
+    }
+}
+/*CLOSE ::: Main > Section4 (NACIRI) */
+
+/*OPEN ::: Contact (HICHAM) */
+main > #contactSection .contactTitle{
+    width: fit-content;
+    font-size: 1.3rem;
+    margin: 50px 0px 30px 0px;
+    color: #17396b;
+}
+
+main > #contactSection > #getInTouch > p{
+    color: #6e6d6b;
+    font-size: .9rem;
+}
+
+main > #contactSection > #getInTouch > .inline{
+    display: flex;
+    align-items: center;
+}
+
+main > #contactSection > #getInTouch > div >  img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+main > #contactSection > #getInTouch > div >  p{
+    padding: 8px 15px;
+    margin: 0;
+    font-size: .8rem;
+}
+
+main > #contactSection > #getInTouch > div >  p > a{
+    text-decoration: none;
+    color: black;
+}
+
+main > #contactSection > #contact > form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > #contactSection > #contact input{
+    height: 2rem;
+    width: min(450px, 100%);
+    margin-bottom: 10px;
+}
+
+main > #contactSection > #contact textarea{
+    min-width: min(450px, 100%);
+    max-width: min(450px, 100%);
+    margin-bottom: 10px;
+}
+
+main > #contactSection > #contact button{
+    width: min(200px ,50%);
+    height: 2rem;
+    color: #fff;
+    background-color: #0C459E;
+    padding: 0;
+    font-size: .8rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer > p{
+    margin-top: 100px;
+    font-size: .6rem;
+    color: #918e8b;
+}
+
+
+@media screen and (min-width: 769px){
+
+    main > #contactSection{
+        display: flex;
+        flex-direction: row;
+    }
+
+    main > #contactSection > #getInTouch{
+        width: 50%;
+        padding-right: 10%;
+    }
+
+    main > #contactSection > #contact{
+        width: 50%;
+    }
+
+    main > #contactSection > #contact > form ::before{
+        content: "";
+        position: absolute;
+        top: 15%;
+        left: 45%;
+        width: .5px;
+        height: 330px;
+        background-color: #c0bdb8;
+    }
+
+    main > #contactSection > #getInTouch > p{
+        margin-bottom: 40px;
+    }
+}
+/*CLOSE ::: Contact (HICHAM) */
+
+/*OPEN ::: Header (HIND) */
+#check, #btn, #cancel{
+    display: none;
+}
+
+header label{
+    position: absolute;
+    right: 10%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: min(16px, 1.2vw);
+}
+
+header div > ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+header div > ul > li{
+    list-style: none;
+}
+
+header div > ul > li > a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+header div > ul > li > a:hover{
+    color: #4474BB;
+    text-decoration: underline;
+    transition: .3s;
+}
+
+header > div.lastNav > ul{
+    align-items: center;
+}
+
+#buttonHeader{
+    font-size: min(16px, 1.2vw);
+    margin-left: 20px;
+    width: 100px;
+}
+
+@media (max-width:704px) {
+    header{
+        font-size: 16px;
+    }
+    #buttonHeader{
+        font-size: 12px;
+    }
+    header > .firstNav ul, header > .lastNav ul{
+        display: none;
+        width: 200px;
+    }
+    header > .lastNav ul{
+        margin: 0;
+    }
+    #btn{
+        display: block;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+    #btn, #cancel{
+        font-size: 30px;
+        cursor: pointer;
+    }
+    #check:checked ~ .lastNav ul > li{
+        margin-top: 10px;
+    }
+    #check:checked ~ .firstNav ul{
+        text-align: center;
+        display: block;
+        position: absolute;
+        right: 40vw;
+    }
+    #check:checked ~ .lastNav ul{
+        text-align: center;
+        display: block;
+        position: absolute;
+        top: 22vh;
+        right: 40vw;
+    }
+}
+
+@media (max-width:500px) {
+    #check:checked ~ .firstNav ul{
+        left: 20vw;
+    }
+    #check:checked ~ .lastNav ul{
+        left: 20vw;
+    }
+}
+/*CLOSE ::: Header (HIND) */
