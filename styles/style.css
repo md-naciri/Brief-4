@@ -30,9 +30,8 @@ body {
 .section-2 > div {
     border: 1px solid #B8B8B8;
     border-radius: 0.25em;
-    width: 100%;
+    width: 23%;
     padding: 2px 10px ;
-    margin: 0px 15px;
     background-color: #FFFFFF;
 }
 .container-title img{
@@ -57,7 +56,7 @@ body {
         flex-wrap: wrap;    
     }
     .section-2 > div{
-        width: 44%;
+        width: 47%;
         padding-bottom: 1%;
         justify-content: center;
         margin-top: 8%;  
@@ -115,23 +114,13 @@ body {
 }
 /* ----------------------------------END Section 2 "Les Cartes" (Hajjou)--------------------------------------- */
 
-*{
-    box-sizing: border-box;
-    font-family: 'Karla';
-}
-body{
-    margin: 2.5% 10% 0% 10%;
-    background-color: #FBF7EE;
-
-    
-}
 /*--------------------------------------------------------- Styling of the first section (+ responsive layout)-----------------------------------------------------------*/
 .secondSection > #secondSectionImage {
     width : 100%;
     float: right;
 }
 main > .flex{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 main > div > .firstSection{
     margin-right: 2em;
@@ -139,7 +128,7 @@ main > div > .firstSection{
 }
 .firstSection > .headings-section > h1 {
     color: #17396b;
-    font-size: 5vh;
+    font-size: 4vw;
     margin: 0;
 }
 main > div > .firstSection > ul {
@@ -160,6 +149,8 @@ main > div > .firstSection > ul > li:first-child{
     margin-right: 10px;
 }
 #tryForFreeButton {
+    width: min(150px, 70%);
+    cursor: pointer;
     padding: 5px 10px;
     font-size: x-small;
     background-color: #0c459e;
@@ -168,9 +159,18 @@ main > div > .firstSection > ul > li:first-child{
     border-radius: 3px;
     box-shadow: 0 2px #060400;
     flex-grow: 0;
-
+    transition: 0.3s;
+}
+#tryForFreeButton:active{
+    box-shadow: 0 0.5px black;
+    transform: translateY(1.5px);
+}
+main > div > .firstSection > .container > form{
+    /* flex-grow: 1; */
+    /* width: 100px; */
 }
 main > div > .firstSection > .container > form > input{
+    height: 30px;
 margin-right: 20px;
 }
 
@@ -203,7 +203,7 @@ main > div > .secondSection{
 }
 
 main > div > .firstSection > .container > form{
-    width : 40%
+    width : min(300px, 70%);
 }
 
 main > div > .firstSection > .container > form > input{
@@ -224,6 +224,9 @@ main > div > .firstSection {
 main > div > .firstSection{
     margin-right: 0;
     width: 100%;
+}
+main > div > .secondSection{
+    width: 0;
 }
 main > div > .firstSection > .container > form{
     width : 60%
@@ -555,7 +558,7 @@ footer > p{
     main > #contactSection > #contact > form ::before{
         content: "";
         position: absolute;
-        top: 15%;
+        top: 23%;
         left: 45%;
         width: .5px;
         height: 330px;
@@ -614,9 +617,11 @@ header > div.lastNav > ul{
     font-size: min(16px, 1.2vw);
     margin-left: 20px;
     width: 100px;
+    background-color: #0C459E;
+    color:  #fff;
 }
 
-@media (max-width:729px) {
+@media (max-width:768px) {
     header{
         font-size: 16px;
     }
@@ -650,23 +655,11 @@ header > div.lastNav > ul{
         text-align: center;
         display: block;
         position: absolute;
-        right: 40vw;
-    }
-    #check:checked ~ .lastNav ul{
-        text-align: center;
-        display: block;
-        position: absolute;
-        top: 22vh;
-        right: 40vw;
-    }
-}
-
-@media (max-width:500px) {
-    #check:checked ~ .firstNav ul{
-        left: 20vw;
-    }
-    #check:checked ~ .lastNav ul{
-        left: 20vw;
+        right: 0;
+        background-color: #fae5b8;
+        padding: 20px 0;
+        width: 100vw;
+        font-size: 2.5vw;
     }
 }
 /*CLOSE ::: Header (HIND) */
