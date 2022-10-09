@@ -1,84 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="images/logo2.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
     <title>Desi.gn</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="shortcut icon" href="images/logo2.png">
-</head>
-<body>
+  </head>
+
+  <body>
     <header>
-        <div>
-            <img src="./images/logo.png">
+      <div>
+        <img src="./images/logo.png" />
+      </div>
+
+      <input type="checkbox" id="check" />
+
+      <nav class="firstNav">
+        <div class="navbar">
+          <ul class="liste1">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="# ">Features</a></li>
+            <li><a href="price.html">Pricing & Plans</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
+      </nav>
+      <div class="lastNav">
+        <ul>
+          <li><a class="btn-sign" href="#">Sign in</a></li>
+          <!-- <li><a class="btn-try" href="#">Try for free</a></li> -->
+          <li>
+            <button type="button" class="button buttonPr" id="buttonHeader">
+              Try for free
+            </button>
+          </li>
+        </ul>
+      </div>
 
-        <input type="checkbox" id="check">
-
-        <nav class="firstNav">
-            <div class="navbar">
-                <ul class="liste1">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="# ">Features</a></li>
-                    <li><a href="price.html">Pricing & Plans</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>                
-            </div>
-        </nav>
-        <div class="lastNav">
-            <ul>
-                <li><a class="btn-sign" href="#">Sign in</a></li>
-                <!-- <li><a class="btn-try" href="#">Try for free</a></li> -->
-                <li><button type="button" class="button buttonPr" id="buttonHeader">Try for free</button></li>
-            </ul>
-        </div>
-
-        <label for="check">
-            <i class="fas fa-bars" id="btn"></i>
-            <i class="fas fa-times" id="cancel"></i>
-        </label>
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
     </header>
     <main>
-        <section class="section4">
-            <h1 id="section4Title">Transparent Pricing.</h1>
-            <p class="section4Text">No hidden fees or extra charges, view the charts for all things pricing-<br>related.</p>
-            <div class="containerPricing">
-                <div class="content1Pricing">
-                    <h5 class="contentTiltle">Startup</h5>
-                    <button type="button" class="buttonPricing">Try for free</button>
-                    <ul>
-                        <li>Brochures, websites, applications.</li>
-                        <li>Free stock photos.</li>
-                        <li>Unlimited revisions.</li>
-                        <li>Unlimited orders.</li>
-                    </ul>
-                    <div class="bottom-content">
-                        <span class="price">$699</span><span class="mo">/mo</span>
-                    </div>
-                </div>
-                <div class="content2Pricing">
-                    <h5 class="contentTiltle">Business</h5>
-                    <button type="button" class="buttonPricing">Try for free</button>
-                    <ul>
-                        <li>All startup features.</li>
-                        <li>Front-end development.</li>
-                        <li>Full-time support.</li>
-                        <li>Slack communication.</li>
-                    </ul>
-                    <div class="bottom-content">
-                        <span class="price">$1299</span><span class="mo">/mo</span>
-                    </div>
-                </div>
-                <div class="content3Pricing">
-                    <h5 class="contentTiltle">Enterprise</h5>
-                    <button type="button" class="buttonPricing">Schedule consultancy call</button>
-                    <p>We offer customizable plans for enterprises who are looking to make use of our service. </p>
-                    <h3 class="bottom-content-3"><a href="contact.html" target="_blank">Contact Us</a></h3>
-                </div>
+      <section class="section4">
+        <h1 id="section4Title">Transparent Pricing.</h1>
+        <p class="section4Text">
+          No hidden fees or extra charges, view the charts for all things
+          pricing-<br />related.
+        </p>
+        <div class="containerPricing">
+          <div class="content1Pricing">
+            <h5 class="contentTiltle">Startup</h5>
+            <button type="button" class="buttonPricing">Try for free</button>
+            <ul>
+              <li>Brochures, websites, applications.</li>
+              <li>Free stock photos.</li>
+              <li>Unlimited revisions.</li>
+              <li>Unlimited orders.</li>
+            </ul>
+            <div class="bottom-content">
+              <span class="price">$699</span><span class="mo">/mo</span>
             </div>
-            <h5 style="color: #13366D; margin-top: 2rem;">Made with ❤️ by {SQUAD MVPs}</h5>
-        </section>
+          </div>
+          <div class="content2Pricing">
+            <h5 class="contentTiltle">Business</h5>
+            <button type="button" class="buttonPricing">Try for free</button>
+            <ul>
+              <li>All startup features.</li>
+              <li>Front-end development.</li>
+              <li>Full-time support.</li>
+              <li>Slack communication.</li>
+            </ul>
+            <div class="bottom-content">
+              <span class="price">$1299</span><span class="mo">/mo</span>
+            </div>
+          </div>
+          <div class="content3Pricing">
+            <h5 class="contentTiltle">Enterprise</h5>
+            <button type="button" class="buttonPricing">
+              Schedule consultancy call
+            </button>
+            <p>
+              We offer customizable plans for enterprises who are looking to
+              make use of our service.
+            </p>
+            <h3 class="bottom-content-3">
+              <a href="contact.html" target="_blank">Contact Us</a>
+            </h3>
+          </div>
+        </div>
+        <h5 style="color: #13366d; margin-top: 2rem">
+          Made with ❤️ by {SQUAD MVPs}
+        </h5>
+      </section>
     </main>
-</body>
+    <footer>
+      <p>@SQUAD MVPs</p>
+    </footer>
+  </body>
 </html>
